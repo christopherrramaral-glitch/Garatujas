@@ -2,77 +2,100 @@
 <html lang="pt-BR">
 
 <head>
-    <style>
-        main {
-            border: 4px solid red;
-        }
+  <title>Perfil</title>
+  <style>
+    /* https://github.com/drachehavoc/ia26-webdesign */
 
-        main aside {
-            border: 4px solid blue;
-            width: 350px;
-            display: inline-block;
-            vertical-align: top;
-        }
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: 150px;
+    }
+    .galeria img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        main aside .thumb {
-            border: 4px solid green;
-        }
+    main {
+      border: 5px dashed black;
+      padding: 1em;
+      display: grid;
+      grid-template-columns: 350px 5fr;
+    }
 
-        main aside .thumb img {
-            width: 100%;
-        }
+    main aside {
+      border: 5px dashed red;
+      padding: 1em;
+    }
 
-        main aside section {
-            border: 4px solid orange;
-        }
+    main aside .thumb img {
+      width: 100%;
+    }
 
-        main section {
-            border: 4px solid purple;
-            display: inline-block;
-        }
-    </style>
+    main > section {
+      border: 5px dashed purple;
+      padding: 1em;
+      min-width: 0;
+    }
+  </style>
 </head>
 
 <body>
-    <main>
-        <aside>
-            <div class="thumb">
-                <img src="image copy.png" alt="imagem do jake">
-            </div>
-            <section>
-                <h2>Dados</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, id. Tenetur, itaque! Ipsa ex
-                    suscipit
-                    architecto facilis quasi ut delectus laudantium quisquam exercitationem at similique, recusandae
-                    nobis nam
-                    dignissimos provident.
-                </p>
-            </section>
-        </aside>
-        <section>
-            <h2>Histórico</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente similique perferendis ipsum eius
-                consequuntur, officia dignissimos doloremque alias reiciendis aliquid autem nihil error. Dolorum quia
-                rerum
-                in
-                officia quae reprehenderit!
-            </p>
-            <p>
-                Molestias eaque rerum ea suscipit ipsum nemo dolor non fugit quas delectus accusamus, neque tempore
-                ullam,
-                praesentium sunt sit! Eius perferendis neque error illum et laborum laudantium, sequi eveniet aliquid!
-            </p>
 
-            <h2>Galeria</h2>
+  <main>
+    <aside>
+      <div class="thumb">
+        <img src="image copy.png" alt="foto do Jake da hora de aventura">
+      </div>
+      <section>
+        <h2>Dados</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, id. Tenetur, itaque! Ipsa ex suscipit
+          architecto facilis quasi ut delectus laudantium quisquam exercitationem at similique, recusandae nobis nam
+          dignissimos provident.
+        </p>
+      </section>
+    </aside>
+    <section>
+      <h2>Histórico</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente similique perferendis ipsum eius
+        consequuntur, officia dignissimos doloremque alias reiciendis aliquid autem nihil error. Dolorum quia rerum in
+        officia quae reprehenderit!
+      </p>
+      <p>
+        Molestias eaque rerum ea suscipit ipsum nemo dolor non fugit quas delectus accusamus, neque tempore ullam,
+        praesentium sunt sit! Eius perferendis neque error illum et laborum laudantium, sequi eveniet aliquid!
+      </p>
 
-            <div class="galeria">
-                <img src="https://picsum.photos/200/300?1" alt="des" tilte="título">
-                <img src="https://picsum.photos/200/300?2" alt="des" tilte="título">
-            </div>
-        </section>
-    </main>
+      <h2>Galeria</h2>
+      <div class="galeria">
+        <img src="https://picsum.photos/200/300?1" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?2" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?3" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?4" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?5" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?6" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?7" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?8" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?9" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?10" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?11" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?12" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?13" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?14" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?15" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?16" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?17" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?18" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?19" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?20" alt="des" tilte="título">
+        <img src="https://picsum.photos/200/300?21" alt="des" tilte="título">
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
