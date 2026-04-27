@@ -7,21 +7,42 @@
         <script src="https://kit.fontawesome.com/3129fb8390.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <button id="prev-btn">
+        <button class="btn-book" id="prev-btn">
            <i class="fa-solid fa-angle-left"></i>
         </button>
+        <main>
         <div id="book" class="book">
 
             <div id="p1" class="paper">
                 <div class="front">
-                    <div id="f1" class="front-content">
-                        <div class="capa"><img src="image.png"></div>
+                    <div id="f1" class="front-content center">
+                        <form action="">
+                        <h1><strong>Contrato</strong></h1>
+                        </form>
                     </div>
                 </div>
                 
                 <div class="back">
                     <div id="b1" class="back-content">
-                        <h1></h1>
+                            <form action="">
+                        <h1><strong>Informações Pessoais:</strong></h1>
+                            <label for="Ipassword"><h2>Nome</h2></label>
+                            <input type="password" id="Ipassword" name="password">
+                            <label for="Iconfpassword"><h2>Confirmar Nome</h2></label>
+                            <input type="password" id="Iconfpassword" name="confpassword">
+                            <label for="ISpTp"><h2>Tipo de Espirito</h2></label>
+                        <select id="TpSp">
+                                <option>Outro</option>
+                                <option>Poltergeist</option>
+                                <option>Spectro</option>
+                                <option>Shadow People</option>
+                                <option>Vingativo</option>
+                                <option>Demônio</option>
+                                <option>Espirito De Purgatório</option>
+                        </select>
+                        <label for="PoFo"><h3>Possui forma física</h3></label>
+                        <input type="checkbox" id="PoFo">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -29,33 +50,40 @@
             <div id="p2" class="paper">
                 <div class="front">
                     <div id="f2" class="front-content">
-                        <h1>Front 2</h1>
+                        <form action="">
+                            <h1><strong>Formação:</strong></h1>
+                        <label for="UlAs"><h2>Imagem da Ultima Assombração:</h2></label>
+                        <input type="file" id="UlAs">
+                        <label for="AsFa"><h2>Assombrações Famosas:</h2></label>
+                        <input type="text" id="AsFa">
+                        <label for="Cur"><h2>Currículo:</h2></label>
+                        <input type="file" id="Cur">
+                        </form>
                     </div>
                 </div>
                 
                 <div class="back">
                     <div id="b2" class="back-content">
-                        <h1></h1>
-                    </div>
-                </div>
-            </div>
-
-            <div id="p3" class="paper">
-                <div class="front">
-                    <div id="f3" class="front-content">
-                        <h1>Front 3</h1>
-                    </div>
-                </div>
-                
-                <div class="back">
-                    <div id="b3" class="back-content">
-                        <h1></h1>
+                        <form action="">
+                        <h1><strong>Outros:</strong></h1>
+                        <label for="As/Co"><h2>Assuntos Inacabados/Contratos:</h2></label>
+                        <input type="text" id="As/Co">
+                        <label for="PrRi"><h3>Precisa de Ritual</h3></label>
+                        <input type="checkbox" id="PrRi">
+                        <label for="PrOf"><h3>Precisa de Oferenda</h3></label>
+                        <input type="checkbox" id="PrOf">
+                        <label for="PENE"><h2>Porque Escolheu Nossa Empresa:</h2></label>
+                        <input type="text" id="PENE">
+                        <label for="PrSa"><h2>Pretenção Salarial:</h2></label>
+                        <input type="text" id="PrSa">
+                        <button class="submit" type="submit">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-
-        <button id="next-btn">
+        </main>
+        <button class="btn-book" id="next-btn">
             <i class="fa-solid fa-angle-right"></i>
         </button>
     </body>
